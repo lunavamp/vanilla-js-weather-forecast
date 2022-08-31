@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>☁️Weather Forecast</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+            <!-- Content here -->
+    <div class="container">
+                <!--Main weather-->
+                <div class="weather-container">
+          <div class="row align-items-start">
+            <div class="col">
+              <ul>
+                <li class="units"><span class="main-temperature" id="temperature"></span>°</li>
+                <li class="main-city" id="city">Kyiv</li>                
+              </ul>
+            </div>
+            <div class="col">
+              <img src="" alt="Clear" id="icon" />
+            </div>
+            <div class="col">
+              <ul class="weather-items">
+                <p id="description"><span class="sky"></span></p>
+                <li>humidity: <span id="humidity"></span>%</li>
+                <li>wind: <span id="wind"></span> m/s</li>
+                <li id="special"></li>
+              </ul>
+            </div>
+          </div>
+        <!--Search-->
+      <div class="input-group mb-3">
+        <form class="search-form" id="search-form">  
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+          </div>
+      </form>
+      </div>
+      <hr>
+      <div class="weather-forecast" id="forecast">
+      </div>
+   </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
