@@ -123,3 +123,34 @@ input[type="search"] {
     font-weight: 600;
   }
 
+  @media (max-width: 768px) { 
+    .weather-container {
+        margin-top: 8px;
+        padding: 40px 20px 0 20px;
+    }
+      input[type="search"] {
+        margin-left: 0;
+        padding: 10px;
+        width: 300px;
+      }
+      .btn {
+        padding-left: 8px;
+        height: 40px;
+        width: 70px;
+      }
+    img {
+        width: 45px;
+    }
+    .main-city {
+        font-size: 65px;
+    }
+    .main-temperature {
+        font-size: 48px;
+        margin: 10px 0 0 185px;
+    }
+    .weather-forecast-date,
+    .weather-forecast-temperature-min,
+    .weather-forecast-temperatures {
+        margin-left: 8px;
+      }
+  }

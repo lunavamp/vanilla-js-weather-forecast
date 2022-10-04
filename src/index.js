@@ -1,4 +1,3 @@
-
 let now = new Date();
 let minutes = now.getMinutes();
 let hours = now.getHours();
