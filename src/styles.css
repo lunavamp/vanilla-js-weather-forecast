@@ -83,7 +83,7 @@ input[type="search"] {
   margin-left: 25px;
   padding: 10px;
   width: 100%;
-  max-width: 420px;
+  width: 600px;
   color: rgba(0,0,0,.08);
 }
 .btn {
@@ -95,7 +95,7 @@ input[type="search"] {
   vertical-align: middle;
   color: #f4f4ec;
   height: 40px;
-  width: 100px;
+  width: 120px;
   background-color: #1d7bff;
   border-color: #66a6ff;
   border-radius: 1px 7px 2px 1px;
@@ -126,12 +126,12 @@ input[type="search"] {
   @media (max-width: 768px) { 
     .weather-container {
         margin-top: 8px;
-        padding: 40px 20px 0 20px;
+        padding: 40px 15px 0;
     }
       input[type="search"] {
         margin-left: 0;
         padding: 10px;
-        width: 300px;
+        width: 280px;
       }
       .btn {
         padding-left: 8px;
@@ -143,6 +143,7 @@ input[type="search"] {
     }
     .main-city {
         font-size: 65px;
+        margin-bottom: 5px;
     }
     .main-temperature {
         font-size: 48px;
