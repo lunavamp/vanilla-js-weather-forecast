@@ -5,6 +5,7 @@ html {
 }
 body {
     margin: 0;
+    padding: 0;
     text-align: left;
     font-family: 'Mulish', sans-serif;
     background-color: #ace3f6;
@@ -69,22 +70,22 @@ p {
 
 /*Search*/
 
-.input-group {
-  margin-top: 0;
-  box-sizing: border-box;
+.search-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 0 7px 2px 20px;
+  box-shadow: 0 3px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08);
 }
 
-input[type="search"] {
-  border-radius: 0 0 0 20px;
+input {
   border: none;
-  box-shadow: 0 3px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08);
   height: 38px;
-  outline: 0;
-  margin-left: 25px;
+  outline: none;
   padding: 10px;
   width: 100%;
-  width: 600px;
-  color: rgba(0,0,0,.08);
+  color: rgba(0, 0, 0, 0.281);
+  background-color: transparent;
 }
 .btn {
   display: inline-block;
@@ -95,10 +96,10 @@ input[type="search"] {
   vertical-align: middle;
   color: #f4f4ec;
   height: 40px;
-  width: 120px;
+  width: 100%;
   background-color: #1d7bff;
   border-color: #66a6ff;
-  border-radius: 1px 7px 2px 1px;
+  border-radius: 0 7px 2px 0;
 }
 
 /* days of the week */
@@ -128,16 +129,18 @@ input[type="search"] {
         margin-top: 8px;
         padding: 40px 15px 0;
     }
-      input[type="search"] {
+    .search-form {
+      max-width: 500px;
+      padding: 0;
+    }
+    input {
         margin-left: 0;
         padding: 10px;
-        width: 280px;
-      }
-      .btn {
+    }
+    .btn {
         padding-left: 8px;
         height: 40px;
-        width: 70px;
-      }
+    }
     img {
         width: 45px;
     }
@@ -154,4 +157,13 @@ input[type="search"] {
     .weather-forecast-temperatures {
         margin-left: 8px;
       }
+  }
+
+  @media (max-width: 500px) {
+    .weather-container {
+      margin: 0;
+  }
+  .container {
+    margin: 0;
+  }
   }
