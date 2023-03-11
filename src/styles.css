@@ -163,7 +163,9 @@ input {
     .weather-container {
       margin: 0;
   }
-  .container {
-    margin: 0;
-  }
+    .btn {
+      font-size: 14px;
+      padding-right: 3px;
+      padding-left: 0:
+    }
   }
