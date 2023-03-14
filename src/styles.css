@@ -102,6 +102,12 @@ input {
   border-radius: 0 7px 2px 0;
 }
 
+.btn:hover{
+  background-color: #1868d7;
+  border-color: #66a6ff;
+  transition: 1s;
+}
+
 /* days of the week */
 
   .col-2 {
@@ -166,6 +172,6 @@ input {
     .btn {
       font-size: 16px;
       padding-right: 0;
-      padding-left: 0:
+      padding-left: 0;
     }
   }
